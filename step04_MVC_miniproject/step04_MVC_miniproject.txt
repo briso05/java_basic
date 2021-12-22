@@ -1,0 +1,33 @@
+[step04_MVC_miniproject]
+
+- 주제 : 사원 관리 프로그램
+
+- 구조
+	- model | Employee -> DTO
+			- 사원 번호	| employeeNum	| long
+			- 이름		| name			| String
+			- 나이	 	| age			| int
+			- 소속 지점	| branch		| String
+			- 소속 부서	| department 	| String
+	- model.domain : EmployeeModel -> DAO
+			- 1: 모든 사원 검색
+			- 2: 사원 한 명 검색 ( 사원 번호 기준 )
+			- 사원 검색
+					- 3: 이름으로
+					- 4: 지점으로
+					- 5: 부서로
+			- 6: 사원 등록
+			- 7: 사원 한 명 삭제 ( 사원 번호 기준 )
+			- 사원 수정
+					- 8: 나이 수정
+					- 9: 지점 수정
+					- 10: 부서 수정
+			
+	- controller : EmployeeController
+	- view : StartView, EndView 
+	
+- 실행 방법
+	- StartView의 Main 실행
+	- EmployeeController.request(int requestNum) 불러서 실행
+		- requestNum은 위에 작성된 기능 번호(1-10) 중 하나 입력하면 됨
+		- 검색 키워드/등록 및 수정 내용 입력 -> 컨트롤러 내 사용된 Model의 메소드 인자를 변경시켜줘야 함
