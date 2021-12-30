@@ -1,0 +1,29 @@
+// Single-Line Comment
+
+/* 
+* Multiple-Line comment
+*/
+
+/** 
+* JavaDoc comment
+*/
+
+/*
+[학습]
+	- Javadoc: Java 소스에 문서화를 하는 방법으로 클래스, 메소드 등에 주석으로 기술한 API 문서를 생성해주는 도구
+
+[내용]
+	- @author : 소스 저자
+	- @see : 다른 클래스 혹은 메소드 참고
+	- @since : 클래스 혹은 메소드가 언제부터 존재했는지
+	- @param : 매개변수 설명
+    - @version : version 설명
+	- @return : 반환값을 설명(void 제외)
+	- @throws : 예외를 던지는 조건 설명
+
+[방법]
+	- step01 : Window -> Preferences -> General -> Content Types -> Text -> Java Sorce File(UTF-8로 업데이트)
+	- step02 : 프로젝트 우클릭 -> export -> javadoc 입력
+	- step03 : API 저장 내용 및 위치 설정
+			입력 내용 : -locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8
+*/
